@@ -1,9 +1,14 @@
-const API_URL = 'https://your-backend-url.com/api/logs'; // ← replace with real backend URL
+const API_URL = 'https://smart-door-7eed399e4075.herokuapp.com/access-request';
 
 async function fetchLogs() {
-  const response = await fetch(API_URL);
-  const logs = await response.json();
-  renderTable(logs);
+  try {
+    const response = await fetch(API_URL);
+    const logs = await response.json();
+    renderTable(logs);
+  } catch (error) {
+    console.error("Failed to fetch logs:", error);
+    alert("Error: Could not load access logs.");
+  }
 }
 
 function renderTable(data) {
@@ -13,10 +18,11 @@ function renderTable(data) {
   data.forEach(log => {
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td>${log.employeeId || '-'}</td>
-      <td>${new Date(log.timestamp).toLocaleString()}</td>
+      <td>${log.id || '-'}</td>
+      <td>${new Date(log.timestamp || log.createdAt).toLocaleString()}</td>
       <td>${log.doorId || '-'}</td>
-      <td>${log.status}</td>
+      <td>${log.status || '-'}</td>
+      <td>${log.method || '-'}</td>
     `;
     tableBody.appendChild(row);
   });
