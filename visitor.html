@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,19 @@
 <body>
   <h1>Visitor Access Logs</h1>
   <input type="text" id="searchInput" placeholder="Search by Door ID or Access Request ID..." />
-  <table>
+  <table id="logTable">
     <thead>
       <tr>
         <th>ID</th>
+        <th>Reason</th>
         <th>Attempts</th>
         <th>Timestamp</th>
         <th>Door ID</th>
         <th>Access Request ID</th>
       </tr>
     </thead>
-    <tbody id="logTableBody"></tbody>
+    <tbody></tbody>
   </table>
-  <script src="script.js"></script>
+  <script src="visitor.js"></script>
 </body>
 </html>
