@@ -1,30 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Smart Door Admin Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Access Log Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Access Log Dashboard</h1>
+  <input type="text" id="searchInput" placeholder="Search by Employee/Visitor ID or Door ID..." />
 
-  <div id="filter">
-    <input type="text" id="search" placeholder="Search by Door ID or Status...">
-  </div>
-
-  <table id="logTable">
+  <h2>Employee Access Logs</h2>
+  <table id="employeeLogTable">
     <thead>
       <tr>
-        <th>ID</th>
+        <th>Employee ID</th>
         <th>Timestamp</th>
         <th>Door ID</th>
         <th>Status</th>
-        <th>Method</th>
       </tr>
     </thead>
-    <tbody>
-      <!-- Filled by script.js -->
-    </tbody>
+    <tbody></tbody>
+  </table>
+
+  <h2>Visitor Access Logs</h2>
+  <table id="visitorLogTable">
+    <thead>
+      <tr>
+        <th>Visitor ID</th>
+        <th>Timestamp</th>
+        <th>Door ID</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
   </table>
 
   <script src="script.js"></script>
