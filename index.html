@@ -1,42 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Access Log Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Employee Access Log Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Access Log Dashboard</h1>
-  <input type="text" id="searchInput" placeholder="Search by Employee/Visitor ID or Door ID..." />
-
-  <h2>Employee Access Logs</h2>
-  <table id="employeeLogTable">
-    <thead>
-      <tr>
-        <th>Employee ID</th>
-        <th>Timestamp</th>
-        <th>Door ID</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <h2>Visitor Access Logs</h2>
-  <table id="visitorLogTable">
-    <thead>
-      <tr>
-        <th>Visitor ID</th>
-        <th>Timestamp</th>
-        <th>Door ID</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-
-  <script src="script.js"></script>
+    <nav>
+        <a href="index.html">Employee Logs</a> |
+        <a href="visitor.html">Visitor Logs</a>
+    </nav>
+    <h2>Employee Access Logs</h2>
+    <input type="text" id="searchInput" placeholder="Search by Employee ID or Door ID...">
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Timestamp</th>
+                <th>Door ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script-employee.js"></script>
 </body>
 </html>
