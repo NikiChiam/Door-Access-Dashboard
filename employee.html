@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Access Logs</title>
+    <link rel="stylesheet" href="employee.css">
+</head>
+<body>
+    <h1>Employee Access Logs</h1>
+    <input type="text" id="searchInput" placeholder="Search by Door ID or Access Request ID...">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Reason</th>
+                <th>Attempts</th>
+                <th>Timestamp</th>
+                <th>Door ID</th>
+                <th>Access Request ID</th>
+            </tr>
+        </thead>
+        <tbody id="logTableBody"></tbody>
+    </table>
+    <script src="employee.js"></script>
+</body>
+</html>
