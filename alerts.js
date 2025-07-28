@@ -1,17 +1,17 @@
 const alerts = [
   {
-    id: "A-001",
+    id: "V-201",
     location: "D-101",
     status: "Locked",
     attempts: 3,
-    triggeredBy: "AccessRequest 2008, 2009, 2010"
+    triggeredBy: "AccessRequest 2003, 2004, 2005"
   },
   {
-    id: "A-002",
-    location: "D-102",
+    id: "S-103",
+    location: "D-103",
     status: "Locked",
     attempts: 3,
-    triggeredBy: "AccessRequest 2002, 2003, 2004"
+    triggeredBy: "AccessRequest 2009, 2010, 2011"
   }
 ];
 
