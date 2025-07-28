@@ -30,7 +30,6 @@ logs.forEach(log => {
     <td>${log.doorId}</td>
     <td>${log.userId}</td>
     <td>${log.requestId}</td>
-    <td>${log.policyDoorAccessId}</td>
     <td>${log.result}</td>
     <td>${log.isVisitor ? "Yes" : "No"}</td>
   `;
