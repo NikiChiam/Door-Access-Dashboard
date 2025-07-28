@@ -3,14 +3,14 @@ const alerts = [
     id: "A-101",
     location: "D-101",
     status: "Locked",
-    attempts: 3,
+    timestamp: "2025-07-28T08:15",
     triggeredBy: "AccessRequest 2003, 2004, 2005"
   },
   {
     id: "A-102",
     location: "D-103",
     status: "Locked",
-    attempts: 3,
+    timestamp: "2025-07-28T09:20",
     triggeredBy: "AccessRequest 2009, 2010, 2011"
   }
 ];
