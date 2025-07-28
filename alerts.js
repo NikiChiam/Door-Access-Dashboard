@@ -18,6 +18,6 @@ const alerts = [
 const tbody = document.querySelector('#alerts-table tbody');
 alerts.forEach(alert => {
   const row = document.createElement('tr');
-  row.innerHTML = `<td>${alert.id}</td><td>${alert.location}</td><td>${alert.status}</td><td>${alert.attempts}</td><td>${alert.triggeredBy}</td>`;
+  row.innerHTML = `<td>${alert.id}</td><td>${alert.location}</td><td>${alert.status}</td><td>${alert.timestamp}</td><td>${alert.triggeredBy}</td>`;
   tbody.appendChild(row);
 });
