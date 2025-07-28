@@ -1,5 +1,11 @@
 const alerts = [
-  { id: "A-001", location: "Lab 1", status: "Locked", attempts: 3, triggeredBy: "AR-1001" }
+  {
+    id: "A-001",
+    location: "D-102",
+    status: "Locked",
+    attempts: 3,
+    triggeredBy: "AccessRequest 2002, 2003, 2004"
+  }
 ];
 
 const tbody = document.querySelector('#alerts-table tbody');
